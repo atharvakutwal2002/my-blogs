@@ -8,7 +8,7 @@ function Hero() {
       </div>
       <h1>Hi I'm Atharva</h1>
       <p>
-        I blog about web-development - especially about frameworks like React
+        I blog about programming and web-development - especially about frameworks like React
       </p>
     </section>
   );
