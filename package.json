@@ -10,11 +10,17 @@
     "export": "next export"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "babel-plugin-macros": "^3.1.0",
     "gray-matter": "^4.0.3",
     "mongodb": "^4.11.0",
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-icons": "^4.6.0",
     "react-markdown": "^5.0.3",
     "react-syntax-highlighter": "^15.5.0"
   }

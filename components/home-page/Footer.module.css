@@ -1,0 +1,52 @@
+.footerContainer {
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-grey-900),
+    var(--color-grey-800)
+  );
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+.colzicon {
+  padding-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  color: aliceblue;
+}
+
+.colz {
+  align-items: center;
+  justify-content: center;
+}
+
+.colzicon a {
+  color: aliceblue;
+  font-size: 2rem;
+}
+.textContainerFooter {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--color-grey-100);
+}
+
+@media (max-width: 768px) {
+  .colzicon {
+    padding-top: 1rem;
+
+    gap: 1rem;
+  }
+  .textContainerFooter {
+    
+    font-size: 1rem;
+  }
+}
