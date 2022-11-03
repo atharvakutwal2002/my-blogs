@@ -8,6 +8,7 @@
     font-size: var(--size-8);
     color: var(--color-grey-800);
     text-align: center;
+    text-shadow: .1rem .2rem .8rem #110101;
   }
   
   @media (min-width: 768px) {

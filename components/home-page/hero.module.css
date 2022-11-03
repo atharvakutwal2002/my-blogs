@@ -29,10 +29,11 @@
   font-size: var(--size-16);
   margin: var(--size-4) 0;
   color: var(--color-grey-300);
+  text-shadow: .5rem .7rem .4rem #110101;
 }
 
 .hero p {
-  font-size: var(--size-6);
+  font-size: var(--size-8);
   color: var(--color-grey-200);
   width: 90%;
   max-width: 40rem;

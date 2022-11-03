@@ -4,10 +4,12 @@
   font-weight: bold;
   font-family: "Oswald", sans-serif;
   color: var(--color-grey-50);
+  font-size: 1.4rem;
 }
 
 @media (min-width: 768px) {
   .logo {
-    font-size: var(--size-8);
+    font-size: 3rem;
+    text-shadow: .5rem .7rem .4rem #110101;
   }
 }
