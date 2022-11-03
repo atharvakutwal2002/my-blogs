@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import FeaturedPosts from "../components/home-page/featured-posts";
 import Hero from "../components/home-page/hero";
 import { getFeaturedPosts } from "../lib/posts-util";
-import Footer from "../components/home-page/footer";
+import Footer from "../components/home-page/Footer";
 import Head from "next/head";
 
 function HomePage(props) {
