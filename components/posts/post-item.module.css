@@ -40,3 +40,10 @@
 .post:hover {
   box-shadow: 1rem 4rem 6rem #060000f4;
 }
+
+@media (max-width: 768px) {
+  .post {
+    width: 90%;
+    margin-left: 5%;
+  }
+}

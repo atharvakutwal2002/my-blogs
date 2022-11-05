@@ -22,6 +22,7 @@ function Notification(props) {
       <h2>{title}</h2>
       <p>{message}</p>
     </div>,
+
     document.getElementById("notifications")
   );
 }

@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 .contact {
   margin: var(--size-8) auto;
   border-radius: 6px;
   background-color: var(--color-grey-100);
-  width: 90%;
+  width: 80%;
   max-width: 50rem;
   padding: var(--size-4);
   box-shadow: 0 2rem 4rem rgba(12, 1, 1, 0.942);
-  font-size: var(--size-6);
-
+  font-size: var(--size-4);
 }
 
 .contact h1 {
@@ -20,7 +19,7 @@
 
 .form label {
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin: var(--size-3) 0 var(--size-2) 0;
 }
@@ -52,8 +51,17 @@
   margin-top: var(--size-4);
   text-align: right;
 }
-
+.contactIcon{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
 .form button {
+  text-align: center;
+  align-items: center;
+  align-content: center;
   font: inherit;
   cursor: pointer;
   background-color: var(--color-primary-700);
@@ -62,16 +70,25 @@
   border-radius: 4px;
   color: var(--color-primary-50);
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  background-color: hsla(0, 0%, 2%, 0.489);
+ 
 }
 
+
+
 .form button:hover {
-  background-color: var(--color-primary-500);
+  background-color:  hsla(0, 86%, 3%, 0.978);
   border-color: var(--color-primary-500);
 }
 
 @media (min-width: 768px) {
   .contact h1 {
-    font-size: var(--size-16);
+    font-size: var(--size-8);
     text-align: center;
+  }
+  .contact {
+    width: 90%;
+
+    font-size: var(--size-6);
   }
 }

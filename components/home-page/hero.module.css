@@ -9,9 +9,10 @@
 }
 
 .image {
-  width: 300px;
-  height: 300px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--color-grey-700);
@@ -19,6 +20,7 @@
 }
 
 .image img {
+  
   object-fit: cover;
   object-position: top;
   width: 100%;
@@ -26,16 +28,38 @@
 }
 
 .hero h1 {
-  font-size: var(--size-16);
+  font-size: 2rem;
   margin: var(--size-4) 0;
   color: var(--color-grey-300);
-  text-shadow: .5rem .7rem .4rem #110101;
+  text-shadow: 0.5rem 0.7rem 0.4rem #110101;
 }
 
 .hero p {
-  font-size: var(--size-8);
+  font-size: 1rem;
   color: var(--color-grey-200);
   width: 90%;
   max-width: 40rem;
   margin: auto;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .image {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--color-grey-700);
+    margin: auto;
+  }
 }
