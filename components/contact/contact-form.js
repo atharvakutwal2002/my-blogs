@@ -7,11 +7,8 @@ import { FaTelegram } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 async function sendContactData(contactDetails) {
-  useEffect(() => {
-    Aos.init({ duration: 2500 });
-  }, []);
+  
 
   const response = await fetch("/api/contact", {
     method: "POST",
@@ -27,6 +24,9 @@ async function sendContactData(contactDetails) {
 }
 
 function ContactForm() {
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, []);
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredName, setEnteredName] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
