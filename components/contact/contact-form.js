@@ -8,8 +8,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 async function sendContactData(contactDetails) {
-  
-
   const response = await fetch("/api/contact", {
     method: "POST",
     body: JSON.stringify(contactDetails),
@@ -94,14 +92,7 @@ function ContactForm() {
     };
     if (isSuccess) {
       toast.success("Message sent successfully ... !", {
-        position: "top-right",
-        autoClose: 1000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
+        toastId: "success1"
       });
     }
   }
@@ -125,6 +116,19 @@ function ContactForm() {
   }
 
   return (
+    <>
+     <ToastContainer
+          position="top-right"
+          autoClose={4000}
+          hideProgressBar={false}
+          newestOnTop={true}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
     <section data-aos="fade-left" className={classes.contact}>
       <h1>How can I help you ?</h1>
       <form className={classes.form} onSubmit={sendMessageHandler}>
@@ -169,26 +173,8 @@ function ContactForm() {
           </button>
         </div>
       </form>
-      {notification && (
-        // <Notification
-        //   status={notification.status}
-        //   title={notification.title}
-        //   message={notification.message}
-        // />
-        <ToastContainer
-          position="top-right"
-          autoClose={4000}
-          hideProgressBar={false}
-          newestOnTop={true}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
-      )}
     </section>
+    </>
   );
 }
 
