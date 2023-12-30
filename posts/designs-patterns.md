@@ -45,7 +45,7 @@ Concrete Creators:
 
 These are the classes that implement the Creator interface or extend the Creator abstract class. Each concrete creator class provides an implementation for the factory method, which creates and returns a specific instance of the Product.
 
-```java
+```js
 // Step 1: Product Interface
 interface Product {
     void create();
