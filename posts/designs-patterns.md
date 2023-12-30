@@ -116,15 +116,19 @@ public class FactoryPatternExample {
 Product Interface (Step 1):
 
 Product interface declares the method create(), which is implemented by concrete products (ConcreteProductA and ConcreteProductB).
+
 Concrete Products (Step 2):
 
 ConcreteProductA and ConcreteProductB are the concrete implementations of the Product interface. They provide specific implementations of the create() method.
+
 Creator Interface (Step 3):
 
 Creator interface declares two methods: factoryMethod() and operation(). The factoryMethod() is responsible for creating a product, and operation() is a method used by clients to interact with the created product.
+
 Concrete Creators (Step 4):
 
 ConcreteCreatorA and ConcreteCreatorB are concrete implementations of the Creator interface. They provide specific implementations for the factoryMethod() and operation() methods.
+
 Client Code (Step 5):
 
 In the main method of the FactoryPatternExample class, we create instances of ConcreteCreatorA and ConcreteCreatorB and call their operation() methods. This demonstrates how different creators can create different products without the client knowing the concrete product classes.
@@ -133,7 +137,7 @@ In the main method of the FactoryPatternExample class, we create instances of Co
 
 The Builder Pattern is a creational design pattern that separates the construction of a complex object from its representation, allowing the same construction process to create different representations. It is especially useful when an object has a large number of parameters, and you want to provide a more readable and maintainable way to construct instances of that object. The Builder Pattern allows you to construct a product step by step, specifying only the desired features, and providing a more fluent and readable way to create complex objects.
 
-```java
+```js
 // Step 1: Product class with a complex construction process
 class Product {
     private String part1;
@@ -256,7 +260,7 @@ Accesses and prints the parts of the constructed product.
 
 The Singleton Pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. It is used when exactly one instance of a class is needed to coordinate actions across the system. The Singleton Pattern is often employed for logging, driver objects, caching, thread pools, database connections, and more. The Singleton Pattern ensures that there is only one instance of the class, and it provides a global point of access to that instance. The lazy initialization technique in the example delays the creation of the instance until it is first needed, improving performance.
 
-```java 
+```js
 // Step 1: Singleton class
 public class Singleton {
     // Step 2: Private static instance variable
@@ -334,7 +338,7 @@ Calls a method on the singleton instance.
 
 The Iterator Pattern is a behavioral design pattern that provides a way to access elements of an aggregate object sequentially without exposing its underlying representation. It defines a common interface for iterating over various types of collections, allowing the client to traverse the elements of a collection without needing to know the specific details of its implementation. The Iterator Pattern helps decouple the client code from the internal structure of the collection, providing a way to iterate over elements without exposing the details of the collection's implementation. This promotes flexibility and allows different types of collections to be iterated in a uniform way.
 
-```java 
+```js
 // Step 1: Iterator interface
 interface Iterator<T> {
     boolean hasNext();
@@ -430,7 +434,7 @@ Uses the iterator to traverse the elements of the aggregate without exposing its
 
 The Adapter Pattern is a structural design pattern that allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces by converting the interface of a class into another interface that a client expects. This pattern involves a single class called the Adapter, which is responsible for joining functionalities of independent or incompatible interfaces.
 
-```java 
+```js
 // Step 1: Target Interface (the expected interface by the client)
 interface Target {
     void request();
