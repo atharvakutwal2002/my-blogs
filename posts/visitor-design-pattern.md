@@ -1,5 +1,5 @@
 ---
-title: "Visitor Design Patterns in Software Engineering"
+title: "Visitor Design Pattern in Software Engineering"
 date: "2024-07-28"
 image: visitor-pattern.png
 excerpt: The Visitor Design Pattern is a behavioral design pattern used to separate algorithms from the objects on which they operate.
@@ -30,12 +30,8 @@ Each concrete element class must have an accept method that takes a visitor as a
 Let's consider one example scenario stated below .
 Suppose we have a case like we have different types of payment cards and we have to provide different discounts based on the merchants and the cards .	         
 
-| type_of_card   |      hotel      | Petrol Pump | grocery  |    
-|----------------|:---------------:|------------:|---------:|  
-| Debit_card     |        10%      |    5%       |    6%    |
-| Credit_card    |        8%       |    4%       |    3%    |
-| charge_card    |         6%      |    3%       |    1%    |
 
+For Debit card hotel-discount=10% , petrol-pump=5% , grocery=6%  similarly for credit card hotel-discount=8% , petrol-pump=4% , grocery=3% and for charge card hotel-discount=6% , petrol-pump=3% , grocery=1% 
 
 						
 The person who is unaware about visitor design pattern will follow a generic and traditional approach of binding the operations or methods to the objects i.e. classes .
