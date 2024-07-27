@@ -40,7 +40,7 @@ Suppose we have a case like we have different types of payment cards and we have
 						
 The person who is unaware about visitor design pattern will follow a generic and traditional approach of binding the operations or methods to the objects i.e. classes .
 for e.g. 
-```Java 
+```js
 class debitCard{
 	hotel(){};
 	petrol_pump(){};
@@ -61,7 +61,7 @@ It may look convenient but consider onboarding merchants in future , the classes
 To overcome this problem , visitor design pattern came into picture .
 This design pattern moves operational logic into other classes making it easy to manage the increasing classes and methods . It involves creating visitor abstract class which will be inherited or implemented by concrete visitors (in our case hotelVisitor, petrolPumpVisitor , groceryVisitor will implement visitorInterface) and there will be classes for objects which also can be implemented from a common interface (in our case creditCard, debitCard, chargeCard will implement cardInterface ) . Visitors have operational logic and perform specific operations as per the object passed into it dynamically . This makes the card classes simpler and focused only on their core responsibilities .
 
-```c++
+```js
 #include<iostream>
 using namespace std;
 
